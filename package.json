@@ -10,10 +10,8 @@
     "test:node": "node --experimental-strip-types --experimental-sqlite --test \"tests/**/*.test.ts\""
   },
   "dependencies": {
+    "@hono/node-server": "^1",
     "hono": "^4",
     "zod": "^3"
-  },
-  "devDependencies": {
-    "@hono/node-server": "^1"
   }
 }

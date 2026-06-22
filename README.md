@@ -26,7 +26,7 @@ note de cadrage : rapidité de l'outillage/CI, démarrage à froid, et débit en
 ## Installation
 
 ```bash
-git clone <URL_DU_DEPOT>
+git clone https://github.com/maelgllt/LearningLab_Bun.git
 cd bun-poc-url-shortener
 # Au choix :
 bun install        # rapide

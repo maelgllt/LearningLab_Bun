@@ -1,0 +1,8 @@
+# Image conteneur sur Node.js — point de comparaison.
+FROM node:22-slim
+WORKDIR /app
+COPY package.json ./
+RUN npm install --omit=dev
+COPY src ./src
+EXPOSE 3000
+CMD ["node", "--experimental-strip-types", "--experimental-sqlite", "src/index.ts"]

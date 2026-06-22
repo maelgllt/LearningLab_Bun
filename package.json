@@ -1,0 +1,19 @@
+{
+  "name": "bun-poc-url-shortener",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "POC Learning Lab — micro-API identique exécutée sur Bun et Node.js pour mesurer les gains réels (CI, démarrage à froid, débit).",
+  "scripts": {
+    "start:bun": "bun run src/index.ts",
+    "start:node": "node --experimental-strip-types --experimental-sqlite src/index.ts",
+    "test:bun": "bun test",
+    "test:node": "node --experimental-strip-types --experimental-sqlite --test \"tests/**/*.test.ts\""
+  },
+  "dependencies": {
+    "hono": "^4",
+    "zod": "^3"
+  },
+  "devDependencies": {
+    "@hono/node-server": "^1"
+  }
+}
